@@ -1,0 +1,28 @@
+{
+  "name": "context-flux",
+  "version": "1.0.0",
+  "description": "`context-flux` is small context api based library to manage state access actions and store from any component updating only the necessary renders needed.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joacososa/context-flux.git"
+  },
+  "author": "Gonzalo Barbitta <gonzalo.barbitta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joacososa/context-flux/issues"
+  },
+  "homepage": "https://github.com/joacososa/context-flux#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
