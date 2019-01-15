@@ -1,3 +1,3 @@
 # Redux Async Generator
 
-`context-flux` is small context api based library to manage state access actions and store from any component updating only the necessary renders needed.
+`context-flux` is a small context api based library to manage state access actions and store from any component updating only the necessary renders needed.
