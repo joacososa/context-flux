@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-The example is very simple. State will contain a unique model with information about the logged user. Through the use of  `actions` we will allow its name to be modified. 
+The example is very simple. State will contain a unique model with information about the logged user. Through the use of  `actions` we will allow its name to be modified. You can see a working example [here](https://codesandbox.io/s/github/gonzalobarbitta/context-flux-api/tree/master/examples)
 
 #### user.actions.js
 

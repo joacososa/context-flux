@@ -1,7 +1,7 @@
 {
   "name": "context-flux",
   "version": "1.0.0",
-  "description": "`context-flux` is small context api based library to manage state access actions and store from any component updating only the necessary renders needed.",
+  "description": "`context-flux` is a small Context Api based library that reduces boilerplate and enforces best practices.",
   "main": "build/index.js",
   "scripts": {
     "start": "webpack --watch",

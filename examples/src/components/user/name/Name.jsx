@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 
 class Name extends React.Component {
   render() {
+    console.log('Rendering Name component');
     return (
       <div className="row">
         <div className="col">

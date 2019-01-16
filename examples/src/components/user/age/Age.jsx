@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 
 class Age extends React.Component {
   render() {
+    console.log('Rendering Age component');
     return (
       <div className="row">
         <div className="col">
