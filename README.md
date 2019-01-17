@@ -9,7 +9,7 @@ This library encourages defining actions and state for each model whose data can
 ## Getting started
 
 ```sh
-$ npm install --save gonzalobarbitta/context-flux-api
+$ npm install --save joacososa/context-flux
 ```
 
 
