@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 import { PropTypes } from 'prop-types';
-import WrapperComponent from '../utils';
+import WrapperComponent from './ContextWrapper';
 
 const Context = createContext();
 
@@ -56,9 +56,9 @@ Provider.propTypes = {
 const connect = (mapStateToProps, Component) => props => (
   <Context.Consumer>
     { context => (
-      <WrapperComponent context={context} mapStateToProps={mapStateToProps}>
+      <ContextWrapper context={context} mapStateToProps={mapStateToProps}>
         <Component {...mapStateToProps(context)} {...props} />
-      </WrapperComponent>
+      </ContextWrapper>
     )}
   </Context.Consumer>
 );

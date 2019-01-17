@@ -1,13 +1,7 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
-import shallowCompare from './shallowCompare';
+import { shallowCompare } from '../utils';
 
-class WrapperComponent extends React.Component {
-    static propTypes = {
-      context: PropTypes.object.isRequired,
-      mapStateToProps: PropTypes.func.isRequired,
-      children: PropTypes.node.isRequired,
-    };
+class ContextWrapper extends React.Component {
     shouldComponentUpdate(nextProps) {
       const { context, mapStateToProps } = this.props;
       return shallowCompare(mapStateToProps(context), mapStateToProps(nextProps.context));
@@ -21,5 +15,5 @@ class WrapperComponent extends React.Component {
     }
 }
 
-export default WrapperComponent;
+export default ContextWrapper;
 

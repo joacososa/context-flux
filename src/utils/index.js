@@ -1,3 +1,3 @@
-import WrapperComponent from './WrapperComponent';
+import shallowCompare from './shallowCompare';
 
-export default WrapperComponent;
+export { shallowCompare };
