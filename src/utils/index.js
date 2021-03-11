@@ -1,3 +1,3 @@
-import shallowCompare from './shallowCompare';
+import shallowCompare from "./shallowCompare";
 
 export { shallowCompare };

@@ -18,13 +18,13 @@
  * need to.
  */
 
-const createActions = actionFile => store => (
-  actionFile.reduce((actions, action) => {
-    actions[action.name] = payload => (
-      action(store, payload)
-    );
-    return actions;
-  }, {})
-);
+const createActions = (actions) => (store) =>
+  Object.keys(actions).reduce(
+    (res, name) => ({
+      ...res,
+      [name]: (payload) => actions[name](store, payload),
+    }),
+    {}
+  );
 
 export default createActions;
