@@ -1,8 +1,9 @@
-import React, { createContext } from 'react';
-import { PropTypes } from 'prop-types';
-import WrapperComponent from './ContextWrapper';
+import React, { createContext } from "react";
+import { PropTypes } from "prop-types";
+import ContextWrapper from "./ContextWrapper";
 
 const Context = createContext();
+Context.displayName = "Context Flux";
 
 /**
  * Place Provider in the root of your react hierarchy, this will create a component that
@@ -53,10 +54,15 @@ Provider.propTypes = {
  * as parameters in the selectedStores param. This will give the return component the access to that
  * store as Props.
  */
-const connect = (mapStateToProps, Component) => props => (
+// eslint-disable-next-line
+const connect = (mapStateToProps, Component) => (props) => (
   <Context.Consumer>
-    { context => (
-      <ContextWrapper context={context} mapStateToProps={mapStateToProps}>
+    {(context) => (
+      <ContextWrapper
+        context={context}
+        mapStateToProps={mapStateToProps}
+        regularProps={props}
+      >
         <Component {...mapStateToProps(context)} {...props} />
       </ContextWrapper>
     )}
@@ -64,4 +70,3 @@ const connect = (mapStateToProps, Component) => props => (
 );
 
 export { Provider, connect };
-
